@@ -9,12 +9,12 @@ body{
     background-color: var(--ig-background-gray);
 }
 
-.instagram-login{
+.flex-container {
     display: flex;
-    margin-left: auto;
-    background-color: var(--ig-primary-white);
-    flex-direction: column;
     justify-content: center;
+}
+
+.instagram-login{
     height: 400px;
     width: 350px;
     border: var(--ig-border-gray);
