@@ -5,18 +5,26 @@
     --ig-border-gray: #dbdbdb;
     --or-font-color: #8e8e8e;
     --facebook-blue: #385185;
-    --font: helvetica;
    }
 
 body{
     background-color: var(--ig-background-gray);
+    margin: 0;
 }
 
 .flex-container {
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin: 55px;
     gap: 20px;
+}
+
+#instagram-phone {
+    display: block !important;
+}
+
+.ig-phone {
+    width: 450px;
 }
 
 .instagram-login {
@@ -24,7 +32,7 @@ body{
     flex-direction: column;
     padding: 20px;
     height: 400px;
-    width: 350px;
+    width: 300px;
     background-color: var(--ig-primary-white);
     border: var(--ig-border-gray);
     border-width: 1px;
@@ -65,7 +73,6 @@ body{
     margin-bottom: -20px;
     border: none;
     color: white;
-    font: var(--font);
 }
 
 .instagram-login > .or-row{
@@ -107,4 +114,29 @@ body{
     justify-content: center;
     align-items: center;
     margin: 2px;
+    color: var(--facebook-blue);
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0;
+}
+
+footer > div {
+    flex-direction: row;
+    margin: 8px;
+    font-size: 77%;
+    color: var(--or-font-color);
+    cursor: pointer;
+}
+
+footer > div:hover {
+    text-decoration: underline;
+}
+
+.second {
+    margin-top: 0;
 }
