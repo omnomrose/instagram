@@ -14,7 +14,10 @@ body{
     justify-content: center;
 }
 
-.instagram-login{
+.instagram-login {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
     height: 400px;
     width: 350px;
     border: var(--ig-border-gray);
@@ -22,14 +25,38 @@ body{
     border-style: solid;
 }
 
-.instagram-login > div{
+.instagram-login > div {
     display: flex;
     flex-direction: column;
-    margin: 30px;
+    margin: 20px;
     gap: 20px;
 }
 
-.insta-logo{
+.insta-logo {
+    justify-content: center;
+    align-items: center;
+}
+
+.insta-logo > img {
     width: 175px;
     cursor: pointer;
+}
+
+.inputs > input {
+    background-color: var(--ig-background-gray);
+    border: var(--ig-border-gray);
+    border-width: 1px;
+    border-style: solid;
+    padding: 10px;
+    margin: -5px;
+    border-radius: 5px;
+}
+
+.inputs > button {
+    background-color: var(--ig-primary-blue);
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: none;
+    color: white;
 }
