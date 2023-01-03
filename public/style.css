@@ -3,6 +3,9 @@
     --ig-primary-white: #ffffff;
     --ig-background-gray: #fafafa;
     --ig-border-gray: #dbdbdb;
+    --or-font-color: #8e8e8e;
+    --facebook-blue: #385185;
+    --font: helvetica;
    }
 
 body{
@@ -12,6 +15,8 @@ body{
 .flex-container {
     display: flex;
     justify-content: center;
+    margin: 20px;
+    gap: 20px;
 }
 
 .instagram-login {
@@ -20,6 +25,7 @@ body{
     padding: 20px;
     height: 400px;
     width: 350px;
+    background-color: var(--ig-primary-white);
     border: var(--ig-border-gray);
     border-width: 1px;
     border-style: solid;
@@ -44,7 +50,7 @@ body{
 
 .inputs > input {
     background-color: var(--ig-background-gray);
-    border: var(--ig-border-gray);
+    border: 1px solid var(--ig-border-gray);
     border-width: 1px;
     border-style: solid;
     padding: 10px;
@@ -55,8 +61,50 @@ body{
 .inputs > button {
     background-color: var(--ig-primary-blue);
     padding: 10px;
-    margin-bottom: 30px;
     border-radius: 10px;
+    margin-bottom: -20px;
     border: none;
     color: white;
+    font: var(--font);
+}
+
+.instagram-login > .or-row{
+    color: var(--or-font-color);
+    flex-direction: row;
+}
+
+.or-row > h3 {
+    margin: 0px;
+}
+
+.or-row > hr{
+    border: -6 solid var(--or-font-color);
+    width: 50%;
+    height: 1px;
+    background-color: var(--or-font-color);
+}
+
+.fb-row{
+    cursor: pointer;
+}
+
+.instagram-login >.fb-row {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--facebook-blue);
+    margin: -15px;
+    padding-right: 25px;
+}
+
+.fb-row > img {
+    width: 20px;
+    height: 20px;
+}
+
+.instagram-login > .forgot-pass{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
 }
