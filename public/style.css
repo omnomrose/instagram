@@ -1,0 +1,35 @@
+:root{
+    --ig-primary-blue: #67b6fa;
+    --ig-primary-white: #ffffff;
+    --ig-background-gray: #fafafa;
+    --ig-border-gray: #dbdbdb;
+   }
+
+body{
+    background-color: var(--ig-background-gray);
+}
+
+.instagram-login{
+    display: flex;
+    margin-left: auto;
+    background-color: var(--ig-primary-white);
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    width: 350px;
+    border: var(--ig-border-gray);
+    border-width: 1px;
+    border-style: solid;
+}
+
+.instagram-login > div{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    gap: 20px;
+}
+
+.insta-logo{
+    width: 175px;
+    cursor: pointer;
+}
