@@ -5,6 +5,7 @@
     --ig-border-gray: #dbdbdb;
     --or-font-color: #8e8e8e;
     --facebook-blue: #385185;
+    --sign-up-color: #0095f5;
    }
 
 body{
@@ -30,8 +31,8 @@ body{
 .instagram-login {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    height: 400px;
+    padding: 15px;
+    height: 390px;
     width: 300px;
     background-color: var(--ig-primary-white);
     border: var(--ig-border-gray);
@@ -43,7 +44,7 @@ body{
     display: flex;
     flex-direction: column;
     margin: 20px;
-    gap: 20px;
+    gap: 5px;
 }
 
 .insta-logo {
@@ -62,13 +63,13 @@ body{
     border-width: 1px;
     border-style: solid;
     padding: 10px;
-    margin: -5px;
     border-radius: 5px;
 }
 
 .inputs > button {
     background-color: var(--ig-primary-blue);
-    padding: 10px;
+    padding: 8px;
+    margin-top: 15px;
     border-radius: 10px;
     margin-bottom: -20px;
     border: none;
@@ -101,6 +102,7 @@ body{
     align-items: center;
     color: var(--facebook-blue);
     margin: -15px;
+    gap: 10px;
     padding-right: 25px;
 }
 
@@ -116,6 +118,51 @@ body{
     margin: 2px;
     color: var(--facebook-blue);
     cursor: pointer;
+}
+
+.instagram-login > .sign-up-box{
+    margin-top: 10px;
+    margin-left: -16px;
+    padding: 5px;
+    height: 50px;
+    width: 320px;
+    background-color: var(--ig-primary-white);
+    border: var(--ig-border-gray);
+    border-width: 1px;
+    border-style: solid;
+    flex-wrap: wrap;
+}
+
+.sign-up-box > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.sign-up {
+    color: var(--sign-up-color);
+    cursor: pointer;
+}
+
+.app-box > p {
+    margin-top: -20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.app-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.app-icons > img{
+    width: 130px;
+    margin: 0px;
 }
 
 footer {
@@ -139,4 +186,33 @@ footer > div:hover {
 
 .second {
     margin-top: 0;
+}
+
+@media screen and (max-width: 820px) {
+
+    #instagram-phone {
+        display: none !important;
+    }
+
+    footer {
+        margin-top: 60%;
+        max-width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 414px) {
+
+    #instagram-phone {
+        display: none !important;
+    }
+
+    footer {
+        margin-top: 60%;
+        max-width: 100%;
+        justify-content: center;
+    }
+
 }
