@@ -6,6 +6,7 @@
     --or-font-color: #8e8e8e;
     --facebook-blue: #385185;
     --sign-up-color: #0095f5;
+    --system-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
    }
 
 body{
@@ -32,7 +33,7 @@ body{
     display: flex;
     flex-direction: column;
     padding: 15px;
-    height: 390px;
+    height: 380px;
     width: 300px;
     background-color: var(--ig-primary-white);
     border: var(--ig-border-gray);
@@ -74,6 +75,8 @@ body{
     margin-bottom: -20px;
     border: none;
     color: white;
+    font-family: var(--system-font);
+    font-weight: 700;
 }
 
 .instagram-login > .or-row{
@@ -82,7 +85,9 @@ body{
 }
 
 .or-row > h3 {
-    margin: 0px;
+    margin: 2px;
+    font-family: var(--system-font);
+    font-size: 10px;
 }
 
 .or-row > hr{
@@ -101,9 +106,12 @@ body{
     justify-content: center;
     align-items: center;
     color: var(--facebook-blue);
-    margin: -15px;
+    margin: -3px;
     gap: 10px;
     padding-right: 25px;
+    font-family: var(--system-font);
+    font-weight: 600;
+    font-size: small;
 }
 
 .fb-row > img {
@@ -118,10 +126,12 @@ body{
     margin: 2px;
     color: var(--facebook-blue);
     cursor: pointer;
+    font-family: var(--system-font);
+    font-size: small;
 }
 
 .instagram-login > .sign-up-box{
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: -16px;
     padding: 5px;
     height: 50px;
@@ -139,11 +149,14 @@ body{
     justify-content: center;
     align-items: center;
     gap: 5px;
+    font-family: var(--system-font);
+    font-size: small;
 }
 
 .sign-up {
     color: var(--sign-up-color);
     cursor: pointer;
+    font-weight: 600;
 }
 
 .app-box > p {
@@ -151,6 +164,8 @@ body{
     justify-content: center;
     align-items: center;
     display: flex;
+    font-family: var(--system-font);
+    font-size: small;
 }
 .app-icons{
     display: flex;
@@ -163,6 +178,7 @@ body{
 .app-icons > img{
     width: 130px;
     margin: 0px;
+    cursor: pointer;
 }
 
 footer {
@@ -177,6 +193,7 @@ footer > div {
     margin: 8px;
     font-size: 77%;
     color: var(--or-font-color);
+    font-family: var(--system-font);
     cursor: pointer;
 }
 
