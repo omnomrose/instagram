@@ -185,13 +185,13 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 0;
+    margin-top: -60px;
 }
 
 footer > div {
     flex-direction: row;
     margin: 8px;
-    font-size: 77%;
+    font-size: small;
     color: var(--or-font-color);
     font-family: var(--system-font);
     cursor: pointer;
